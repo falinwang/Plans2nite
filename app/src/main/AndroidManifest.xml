@@ -16,7 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".FilterActivity" />
+        <activity android:name=".PlanPageActivity" />
+        <activity android:name=".FavListViewActivity" />
+        <activity android:name=".FavPlanPageActivity" />
+        <activity android:name=".UpcomingPlanListActivity" />
+        <activity android:name=".PastPlanListActivity" />
+        <activity android:name=".UpcomingPlanPageActivity" />
+        <activity android:name=".PastPlanPageActivity" />
+        <activity android:name=".ReviewPageActivity" />
+        <activity android:name=".ProfilePageActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>
