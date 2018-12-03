@@ -108,7 +108,7 @@
         android:id="@+id/buttonSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button"
+        android:layout_alignStart="@+id/buttonFavorite"
         android:layout_alignTop="@+id/buttonEditProfile"
         android:text="Settings" />
 
