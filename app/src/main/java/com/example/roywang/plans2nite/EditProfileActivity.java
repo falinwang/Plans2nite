@@ -3,6 +3,8 @@ package com.example.roywang.plans2nite;
 import android.app.Activity;
 import android.os.Bundle;
 
+// Hello this is a test
+
 public class EditProfileActivity extends Activity {
 
     @Override
