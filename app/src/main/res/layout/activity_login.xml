@@ -16,6 +16,7 @@
         android:ems="10"
         android:hint="E mail"
         android:inputType="textPersonName|textWebEmailAddress"
+        android:text="b@b.com"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -31,6 +32,7 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName|textWebPassword"
+        android:text="bbbbbb"
         android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/editTextEMail"
         app:layout_constraintEnd_toEndOf="parent"
