@@ -29,7 +29,8 @@
         <activity android:name=".ReviewPageActivity" />
         <activity android:name=".ProfilePageActivity" />
         <activity android:name=".EditProfileActivity" />
-        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".PlanInputActivity"></activity>
     </application>
 
 </manifest>

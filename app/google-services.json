@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "365667034224-82c9pg4lucmvrl7uc74ibu1ne7jn99b0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.roywang.plans2nite",
+            "certificate_hash": "1b60001fe888ec8e9b038a3e853ac5f49a1d9234"
+          }
+        },
+        {
           "client_id": "365667034224-p4gfjtrhsflg14ilopftjqa3eb3rcrga.apps.googleusercontent.com",
           "client_type": 3
         }
