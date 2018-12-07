@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Item" />
-    <item android:title="Item" />
+    <item
+        android:id="@+id/ListView_Menu"
+        android:title="Home" />
+    <item
+        android:id="@+id/MyPlans_Menu"
+        android:title="My Plans" />
+    <item
+        android:id="@+id/InputPlans_Menu"
+        android:title="Enter Plans" />
+    <item
+        android:id="@+id/LogOut_Menu"
+        android:title="LogOut" />
 </menu>
