@@ -10,12 +10,14 @@
         android:id="@+id/editTextEMail"
         android:layout_width="wrap_content"
         android:layout_height="43dp"
+        android:layout_alignStart="@+id/textView16"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="134dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="152dp"
         android:ems="10"
         android:hint="E mail"
         android:inputType="textPersonName|textWebEmailAddress"
+        android:text="b@b.com"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -27,10 +29,11 @@
         android:layout_alignStart="@+id/editTextEMail"
         android:layout_alignParentTop="true"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="210dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName|textWebPassword"
+        android:text="bbbbbb"
         android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/editTextEMail"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="226dp"
+        android:layout_marginBottom="208dp"
         android:text="Login" />
 
     <Button
@@ -54,7 +57,7 @@
         android:layout_alignEnd="@+id/buttonLogin"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="106dp"
         android:text="Register" />
 
     <TextView
@@ -63,14 +66,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="49dp"
         android:gravity="center_horizontal"
         android:text="Plans2nite"
         android:textAllCaps="true"
-        android:textSize="24sp"
+        android:textSize="36sp"
         android:textStyle="bold"
         tools:text="Plans2nite" />
 
@@ -80,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="170dp"
+        android:layout_marginBottom="159dp"
         android:text="Don't have an account?" />
 
     <TextView
@@ -92,5 +94,14 @@
         android:layout_marginBottom="11dp"
         android:text="Powered by Group 4"
         android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Discover what's around Ann Arbor!" />
 
 </RelativeLayout>

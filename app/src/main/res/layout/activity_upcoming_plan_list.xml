@@ -48,4 +48,44 @@
         android:layout_alignParentBottom="true"
         android:text="Profile" />
 
+    <Button
+        android:id="@+id/buttonSwitchUpcoming"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Upcoming Plans" />
+
+    <Button
+        android:id="@+id/buttonSwitchPast"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="Past Plans" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="Past Plans" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="372dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
 </RelativeLayout>

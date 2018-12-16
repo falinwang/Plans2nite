@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "365667034224",
+    "firebase_url": "https://plans2nite-3b007.firebaseio.com",
+    "project_id": "plans2nite-3b007",
+    "storage_bucket": "plans2nite-3b007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365667034224:android:77d07a3bc6409389",
+        "android_client_info": {
+          "package_name": "com.example.roywang.plans2nite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365667034224-oau091jcbsgqj6kjb5da6pp3pod2hshv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.roywang.plans2nite",
+            "certificate_hash": "c87e038dfa7b314b6237986f1925e86ad5933e9e"
+          }
+        },
+        {
+          "client_id": "365667034224-82c9pg4lucmvrl7uc74ibu1ne7jn99b0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.roywang.plans2nite",
+            "certificate_hash": "1b60001fe888ec8e9b038a3e853ac5f49a1d9234"
+          }
+        },
+        {
+          "client_id": "365667034224-p4gfjtrhsflg14ilopftjqa3eb3rcrga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwunhmdukVva3GOrlDxc44xGCEeYrm_VI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365667034224-p4gfjtrhsflg14ilopftjqa3eb3rcrga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
