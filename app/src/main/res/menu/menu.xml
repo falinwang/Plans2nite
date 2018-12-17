@@ -11,6 +11,9 @@
         android:id="@+id/InputPlans_Menu"
         android:title="Enter Plans" />
     <item
+        android:id="@+id/Profile_Menu"
+        android:title="Profile" />
+    <item
         android:id="@+id/LogOut_Menu"
         android:title="LogOut" />
 </menu>

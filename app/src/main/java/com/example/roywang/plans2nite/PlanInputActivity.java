@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -17,6 +18,7 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
 
     EditText editEventName, editEventDate, editEventLocation, editEventType, editEventDetails;
     Button buttonCreateEvent, buttonEventUpdate;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,8 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
 
         buttonCreateEvent.setOnClickListener(this);
         buttonEventUpdate.setOnClickListener(this);
+
+        mAuth = FirebaseAuth.getInstance();
     }
 
     @Override
@@ -48,18 +52,14 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
             String createDetails = editEventDetails.getText().toString();
             String createType = editEventType.getText().toString();
             String createLocation = editEventLocation.getText().toString();
+            String currentUser= mAuth.getCurrentUser().getEmail() ;
 
-            Event newEvent = new Event(createName, createDate, createLocation, createType, createDetails);
+
+
+            Event newEvent = new Event(createName, createDate, createLocation, createType, createDetails,"N","N",currentUser );
+
 
             myRef.push().setValue(newEvent);
-        } else if (v == buttonEventUpdate) {
-            String updateName = editEventName.getText().toString();
-            String updateDate = editEventDate.getText().toString();
-            String updateDetails = editEventDetails.getText().toString();
-            String updateType = editEventType.getText().toString();
-            String updateLocation = editEventLocation.getText().toString();
-
-
         }
     }
 
@@ -89,6 +89,11 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
             case R.id.LogOut_Menu:
                 Intent LogOutMenuInt = new Intent(PlanInputActivity.this,LoginActivity.class);
                 startActivity(LogOutMenuInt);
+                return true;
+
+            case R.id.Profile_Menu :
+                Intent ProfileMenuInt = new Intent(PlanInputActivity .this,EditProfileActivity .class);
+                startActivity(ProfileMenuInt );
                 return true;
 
             default:

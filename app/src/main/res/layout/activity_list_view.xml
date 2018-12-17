@@ -6,73 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ListViewActivity">
 
-    <Button
-        android:id="@+id/buttonRegister"
-        android:layout_width="161dp"
-        android:layout_height="wrap_content"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="29dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginTop="164dp"
-        android:text="Register"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="298dp" />
-
-    <TextView
-        android:id="@+id/textEventName"
-        android:layout_width="261dp"
-        android:layout_height="29dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="39dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="23dp"
-        android:text="Event Name: BasketBall Game" />
-
-    <Button
-        android:id="@+id/buttonFavorite"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/buttonRegister"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:text="Favorite" />
-
-    <TextView
-        android:id="@+id/textEventPrice"
-        android:layout_width="260dp"
-        android:layout_height="29dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="39dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="52dp"
-        android:text="Event Date: 05/12/18" />
-
-    <TextView
-        android:id="@+id/textEventDesc"
-        android:layout_width="259dp"
-        android:layout_height="32dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="39dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="80dp"
-        android:text="Event Description: Umich vs Purdue" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textEventDesc"
-        android:layout_alignStart="@+id/textEventName"
-        android:text="TextView" />
-
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" />
 </RelativeLayout >
