@@ -43,6 +43,11 @@ public class ListViewActivity extends Activity {
                 startActivity(LogOutMenuInt);
                 return true;
 
+            case R.id.Profile_Menu :
+                Intent ProfileMenuInt = new Intent(ListViewActivity.this,EditProfileActivity .class);
+                startActivity(ProfileMenuInt );
+                return true;
+
             default:
                 return false;
         }

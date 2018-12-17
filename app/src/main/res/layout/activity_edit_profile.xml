@@ -6,58 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".EditProfileActivity">
 
-    <Button
-        android:id="@+id/buttonExplore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:text="Explore"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="454dp" />
-
-    <Button
-        android:id="@+id/buttonFavorites"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="104dp"
-        android:layout_marginLeft="104dp"
-        android:layout_marginBottom="0dp"
-        android:text="Favorites" />
-
-    <Button
-        android:id="@+id/buttonPlans"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="98dp"
-        android:layout_marginRight="98dp"
-        android:layout_marginBottom="0dp"
-        android:text="Plans" />
-
-    <Button
-        android:id="@+id/buttonProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:text="Profile" />
-
-    <Button
-        android:id="@+id/buttonPicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="-28dp"
-        android:layout_toStartOf="@+id/buttonPlans"
-        android:text="Picture" />
-
     <TextView
         android:id="@+id/textViewName"
         android:layout_width="wrap_content"
@@ -65,9 +13,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="163dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="165dp"
         android:text="Name" />
 
     <TextView
@@ -76,26 +24,28 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
         android:layout_marginTop="213dp"
         android:text="Location" />
 
     <TextView
-        android:id="@+id/textViewDateJoined"
+        android:id="@+id/textViewEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="238dp"
-        android:text="Date Joined" />
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="240dp"
+        android:text="Email" />
 
     <TextView
-        android:id="@+id/textViewPlansAttended"
+        android:id="@+id/textViewContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextPlansAttended"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="192dp"
-        android:text="Plans Attended" />
+        android:layout_marginStart="26dp"
+        android:text="Contact" />
 
     <EditText
         android:id="@+id/editTextName"
@@ -120,7 +70,7 @@
         android:text="Location" />
 
     <EditText
-        android:id="@+id/editTextDateJoined"
+        android:id="@+id/editTextEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/editTextName"
@@ -129,7 +79,7 @@
         android:layout_marginBottom="231dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Date Joined" />
+        android:text="Email Id" />
 
     <EditText
         android:id="@+id/editTextPlansAttended"
@@ -141,16 +91,16 @@
         android:layout_marginBottom="182dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Plans Attended" />
+        android:text="Mobile Number" />
 
     <Button
         android:id="@+id/buttonSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-104dp"
-        android:layout_marginBottom="71dp"
-        android:layout_toStartOf="@+id/buttonFavorites"
+        android:layout_marginStart="-19dp"
+        android:layout_marginBottom="60dp"
+        android:layout_toEndOf="@+id/textViewContact"
         android:text="Save" />
 
     <Button

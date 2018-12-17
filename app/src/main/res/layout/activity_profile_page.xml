@@ -1,177 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfilePageActivity">
 
-    <Button
-        android:id="@+id/buttonExplore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:text="Explore"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="454dp" />
-
-    <Button
-        android:id="@+id/buttonFavorites"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="62dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="104dp"
-        android:layout_marginLeft="104dp"
-        android:layout_marginBottom="0dp"
-        android:text="Favorites" />
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="87dp"
+        android:text="Name"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="81dp" />
 
-    <Button
-        android:id="@+id/buttonPlans"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/textViewName1"
+        android:layout_width="153dp"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginLeft="149dp"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewName"
+        android:layout_alignLeft="@+id/textViewName"
+        android:layout_alignTop="@+id/textViewName1"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="48dp"
+        android:text="Email"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewEmail1"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewEmail"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="98dp"
-        android:layout_marginRight="98dp"
-        android:layout_marginBottom="0dp"
-        android:text="Plans" />
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:layout_marginBottom="0dp" />
 
-    <Button
-        android:id="@+id/buttonProfile"
+    <TextView
+        android:id="@+id/textViewAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:text="Profile" />
-
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="155dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
-
-    <EditText
-        android:id="@+id/editTextLocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editTextName"
+        android:layout_alignEnd="@+id/textViewName"
         android:layout_alignParentTop="true"
         android:layout_marginTop="201dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Location" />
+        android:layout_marginEnd="-8dp"
+        android:text="Address"
+        android:textSize="18sp" />
 
-    <EditText
-        android:id="@+id/editTextDateJoined"
+    <TextView
+        android:id="@+id/textViewAddress1"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/textViewContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editTextName"
+        android:layout_alignEnd="@+id/textViewEmail"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="231dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Date Joined" />
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="233dp"
+        android:text="Contact"
+        android:textSize="18sp" />
 
-    <EditText
-        android:id="@+id/editTextPlansAttended"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/textViewContact1"
+        android:layout_width="153dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editTextName"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="182dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Plans Attended" />
+        android:layout_alignBottom="@+id/textViewContact"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:layout_marginBottom="0dp" />
 
     <Button
         android:id="@+id/buttonEditProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="124dp"
-        android:layout_marginBottom="89dp"
+        android:layout_marginStart="-31dp"
+        android:layout_marginBottom="111dp"
+        android:layout_toEndOf="@+id/textViewAddress"
         android:text="Edit Profile" />
 
     <Button
-        android:id="@+id/buttonSettings"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonLogout"
+        android:layout_width="101dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/buttonFavorite"
         android:layout_alignTop="@+id/buttonEditProfile"
-        android:text="Settings" />
-
-    <Button
-        android:id="@+id/buttonLogOut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/buttonEditProfile"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:text="Log Out" />
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:text="Logout" />
 
-    <Button
-        android:id="@+id/buttonPicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="-28dp"
-        android:layout_toStartOf="@+id/buttonPlans"
-        android:text="Picture" />
-
-    <TextView
-        android:id="@+id/textViewName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="163dp"
-        android:text="Name" />
-
-    <TextView
-        android:id="@+id/textViewLocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="213dp"
-        android:text="Location" />
-
-    <TextView
-        android:id="@+id/textViewDateJoined"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="238dp"
-        android:text="Date Joined" />
-
-    <TextView
-        android:id="@+id/textViewPlansAttended"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="192dp"
-        android:text="Plans Attended" />
-
-
-</RelativeLayout>
-
+</RelativeLayout >

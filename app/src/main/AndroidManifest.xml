@@ -27,10 +27,10 @@
         <activity android:name=".UpcomingPlanPageActivity" />
         <activity android:name=".PastPlanPageActivity" />
         <activity android:name=".ReviewPageActivity" />
-        <activity android:name=".ProfilePageActivity" />
         <activity android:name=".EditProfileActivity" />
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".PlanInputActivity"></activity>
+        <activity android:name=".PlanInputActivity" />
+        <activity android:name=".ProfilePageActivity"></activity>
     </application>
 
 </manifest>
