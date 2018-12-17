@@ -189,7 +189,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView4"
-        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignBottom="@+id/textViewPlantype"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="0dp"
         android:text="3:00 pm"
