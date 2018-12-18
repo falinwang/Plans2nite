@@ -18,7 +18,7 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
 
     EditText editEventName, editEventDate, editEventLocation, editEventType, editEventDetails;
     Button buttonCreateEvent, buttonEventUpdate;
-    private FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,6 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
         buttonCreateEvent.setOnClickListener(this);
         buttonEventUpdate.setOnClickListener(this);
 
-        mAuth = FirebaseAuth.getInstance();
     }
 
     @Override
@@ -52,11 +51,8 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
             String createDetails = editEventDetails.getText().toString();
             String createType = editEventType.getText().toString();
             String createLocation = editEventLocation.getText().toString();
-            String currentUser= mAuth.getCurrentUser().getEmail() ;
 
-
-
-            Event newEvent = new Event(createName, createDate, createLocation, createType, createDetails,"N","N",currentUser );
+            Event newEvent = new Event(createName, createDate, createLocation, createType, createDetails);
 
 
             myRef.push().setValue(newEvent);

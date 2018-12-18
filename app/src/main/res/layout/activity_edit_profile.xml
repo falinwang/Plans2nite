@@ -42,13 +42,13 @@
         android:id="@+id/textViewContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editTextPlansAttended"
+        android:layout_alignBaseline="@+id/editTextContact1"
         android:layout_alignParentStart="true"
         android:layout_marginStart="26dp"
         android:text="Contact" />
 
     <EditText
-        android:id="@+id/editTextName"
+        android:id="@+id/editTextName1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -59,10 +59,10 @@
         android:text="Name" />
 
     <EditText
-        android:id="@+id/editTextLocation"
+        android:id="@+id/editTextLocation1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editTextName"
+        android:layout_alignStart="@+id/editTextName1"
         android:layout_alignParentTop="true"
         android:layout_marginTop="201dp"
         android:ems="10"
@@ -70,10 +70,10 @@
         android:text="Location" />
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/editTextEmail1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editTextName"
+        android:layout_alignStart="@+id/editTextName1"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="231dp"
@@ -82,10 +82,10 @@
         android:text="Email Id" />
 
     <EditText
-        android:id="@+id/editTextPlansAttended"
+        android:id="@+id/editTextContact1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editTextName"
+        android:layout_alignStart="@+id/editTextName1"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="182dp"
