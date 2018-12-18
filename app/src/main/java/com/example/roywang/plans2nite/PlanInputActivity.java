@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class PlanInputActivity extends Activity implements View.OnClickListener {
 
     EditText editEventName, editEventDate, editEventLocation, editEventType, editEventDetails;
-    Button buttonCreateEvent, buttonEventUpdate;
+    Button buttonCreateEvent;
 
 
     @Override
@@ -26,7 +26,6 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
         setContentView(R.layout.activity_plan_input);
 
         buttonCreateEvent = findViewById(R.id.buttonCreateEvent);
-        buttonEventUpdate = findViewById(R.id.buttonEventUpdate);
         editEventDate = findViewById(R.id.editEventDate);
         editEventName = findViewById(R.id.editEventName);
         editEventDetails = findViewById(R.id.editEventDetails);
@@ -34,7 +33,6 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
         editEventLocation = findViewById(R.id.editEventLocation);
 
         buttonCreateEvent.setOnClickListener(this);
-        buttonEventUpdate.setOnClickListener(this);
 
     }
 
