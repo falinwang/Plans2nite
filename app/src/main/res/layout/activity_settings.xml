@@ -6,67 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".SettingsActivity">
 
-    <Button
-        android:id="@+id/buttonExplore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:text="Explore"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="454dp" />
-
-    <Button
-        android:id="@+id/buttonFavorites"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="104dp"
-        android:layout_marginLeft="104dp"
-        android:layout_marginBottom="0dp"
-        android:text="Favorites" />
-
-    <Button
-        android:id="@+id/buttonPlans"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="98dp"
-        android:layout_marginRight="98dp"
-        android:layout_marginBottom="0dp"
-        android:text="Plans" />
-
-    <Button
-        android:id="@+id/buttonProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:text="Profile" />
 
     <Button
         android:id="@+id/buttonSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-104dp"
-        android:layout_marginBottom="71dp"
-        android:layout_toStartOf="@+id/buttonFavorites"
+        android:layout_marginStart="142dp"
+        android:layout_marginBottom="85dp"
         android:text="Save" />
 
     <Button
         android:id="@+id/buttonViewProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/buttonSave"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="112dp"
-        android:layout_marginRight="112dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginBottom="85dp"
+        android:layout_toEndOf="@+id/textViewUseGPS"
         android:text="View Profile" />
 
     <TextView
@@ -75,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/buttonExplore"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
         android:layout_marginTop="144dp"
         android:text="Email Address" />
 
@@ -82,9 +40,9 @@
         android:id="@+id/textViewSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/buttonFavorites"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="29dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
         android:text="Settings"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
@@ -92,8 +50,10 @@
         android:id="@+id/editTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textViewSettings"
         android:layout_alignBottom="@+id/textViewEmailAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-13dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Email Address" />
@@ -104,7 +64,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="227dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="226dp"
         android:text="Password" />
 
     <EditText
@@ -113,7 +74,9 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/editTextEmailAddress"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="212dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="0dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Passwrod" />
@@ -122,26 +85,35 @@
         android:id="@+id/textViewUseGPS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textViewPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="204dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginBottom="203dp"
         android:text="Use GPS" />
 
     <Button
         android:id="@+id/buttonON"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textViewSettings"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="182dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginBottom="187dp"
         android:text="ON" />
 
     <Button
         android:id="@+id/buttonOFF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/buttonPlans"
-        android:layout_alignBottom="@+id/buttonON"
+        android:layout_alignBaseline="@+id/textViewUseGPS"
+        android:layout_alignStart="@+id/textViewUseGPS"
+        android:layout_alignLeft="@+id/textViewUseGPS"
+        android:layout_marginStart="234dp"
+        android:layout_marginLeft="234dp"
         android:text="OFF" />
 
 </RelativeLayout>

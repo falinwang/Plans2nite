@@ -114,5 +114,14 @@
         android:layout_marginRight="112dp"
         android:text="View Profile" />
 
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Edit Profile" />
+
 </RelativeLayout>
 

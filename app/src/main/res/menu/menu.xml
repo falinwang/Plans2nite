@@ -15,5 +15,5 @@
         android:title="Profile" />
     <item
         android:id="@+id/LogOut_Menu"
-        android:title="LogOut" />
+        android:title="Log Out" />
 </menu>
