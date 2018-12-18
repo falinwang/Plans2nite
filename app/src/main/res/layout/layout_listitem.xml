@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="350dp"
     android:id="@+id/parent_Layout" android:padding="30dp">
 
     <LinearLayout
@@ -27,7 +27,8 @@
             android:layout_weight="1"
             android:autofillHints=""
             android:ems="10"
-            android:text="Date" />
+            android:text="Date"
+            android:textSize="17dp" />
 
 
     </LinearLayout>
@@ -35,7 +36,7 @@
 
     <TextView
         android:id="@+id/textViewDetails"
-        android:layout_width="350dp"
+        android:layout_width="250dp"
         android:layout_height="150dp"
         android:layout_alignStart="@+id/textViewLocation"
         android:layout_alignParentTop="true"
@@ -46,7 +47,7 @@
 
     <TextView
         android:id="@+id/textViewLocation"
-        android:layout_width="200dp"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -54,15 +55,19 @@
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="40dp"
-        android:text="Location" />
+        android:text="Location"
+        android:textSize="17dp" />
 
     <TextView
         android:id="@+id/textViewPlantype"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textViewLocation"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/textViewLocation"
-        android:text="Plantype" />
+        android:text="Plantype"
+        android:textSize="17dp" />
 
     <Button
         android:id="@+id/buttonFavorite"
@@ -70,8 +75,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginBottom="217dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginBottom="21dp"
         android:text="Favorite" />
 
     <Button
@@ -81,8 +86,8 @@
         android:layout_alignBottom="@+id/buttonFavorite"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="193dp"
-        android:layout_marginLeft="193dp"
+        android:layout_marginStart="213dp"
+        android:layout_marginLeft="213dp"
         android:layout_marginBottom="1dp"
         android:text="Register" />
 

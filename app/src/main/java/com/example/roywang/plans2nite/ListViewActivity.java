@@ -3,16 +3,68 @@ package com.example.roywang.plans2nite;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 public class ListViewActivity extends Activity {
+
+    private ArrayList<Event> events;
+    private RecyclerViewAdapter recyclerViewAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view);
+        events = new ArrayList<>();
+        initRecyclerView();
+        getEvents();
+    }
+
+    private void getEvents() {
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference contactsRef = database.getReference("events");
+
+        contactsRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                Toast.makeText(ListViewActivity.this, "datasnapshot", Toast.LENGTH_SHORT).show();
+
+                for(DataSnapshot child : dataSnapshot.getChildren()) {
+                    Event event = child.getValue(Event.class);
+                    events.add(event);
+                }
+                recyclerViewAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+
+            }
+        });
+    }
+
+    private void initRecyclerView() {
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        recyclerViewAdapter = new RecyclerViewAdapter(events, this);
+        recyclerView.setAdapter(recyclerViewAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
 
     @Override
