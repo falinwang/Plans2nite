@@ -35,9 +35,9 @@ public class ListViewActivity extends Activity {
     private void getEvents() {
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference contactsRef = database.getReference("events");
+        DatabaseReference eventsRef = database.getReference("events");
 
-        contactsRef.addListenerForSingleValueEvent(new ValueEventListener() {
+        eventsRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
