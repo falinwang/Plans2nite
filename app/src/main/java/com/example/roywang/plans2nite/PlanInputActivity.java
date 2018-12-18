@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -54,6 +55,8 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
 
 
             myRef.push().setValue(newEvent);
+            Toast.makeText(PlanInputActivity.this, "Create Successfully!", Toast.LENGTH_SHORT).show();
+
         }
     }
 

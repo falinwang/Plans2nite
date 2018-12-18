@@ -8,7 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -32,25 +31,19 @@ public class ListViewActivity extends Activity {
         getEvents();
     }
 
-    private void initEvents() {
-        events = new ArrayList<>();
-        events.add(new Event("Test", "Date", "Location", "Type", "details"  ));
-        initRecyclerView();
-    }
 
     private void getEvents() {
 
+        // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference eventsRef = database.getReference("events");
-
+        DatabaseReference eventsRef = database.getReference("Events");
+        // Read from the database
         eventsRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-                Toast.makeText(ListViewActivity.this, "datasnapshot", Toast.LENGTH_SHORT).show();
-
-                for(DataSnapshot child : dataSnapshot.getChildren()) {
+                for(DataSnapshot child: dataSnapshot.getChildren()) {
                     Event event = child.getValue(Event.class);
                     events.add(event);
                 }
@@ -60,7 +53,6 @@ public class ListViewActivity extends Activity {
             @Override
             public void onCancelled(DatabaseError error) {
                 // Failed to read value
-
             }
         });
     }
