@@ -38,6 +38,11 @@ public class UpcomingPlanListActivity extends Activity {
                 startActivity(InputPlansMenuInt);
                 return true;
 
+            case R.id.Profile_Menu :
+                Intent ProfileMenuInt = new Intent(UpcomingPlanListActivity.this,ProfilePageActivity.class);
+                startActivity(ProfileMenuInt );
+                return true;
+
             case R.id.LogOut_Menu:
                 Intent LogOutMenuInt = new Intent(UpcomingPlanListActivity.this,LoginActivity.class);
                 startActivity(LogOutMenuInt);

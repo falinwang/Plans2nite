@@ -86,7 +86,7 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
                 return true;
 
             case R.id.Profile_Menu :
-                Intent ProfileMenuInt = new Intent(PlanInputActivity .this,EditProfileActivity .class);
+                Intent ProfileMenuInt = new Intent(PlanInputActivity .this,ProfilePageActivity.class);
                 startActivity(ProfileMenuInt );
                 return true;
 

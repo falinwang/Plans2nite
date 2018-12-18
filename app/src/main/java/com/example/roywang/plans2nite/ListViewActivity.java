@@ -32,6 +32,12 @@ public class ListViewActivity extends Activity {
         getEvents();
     }
 
+    private void initEvents() {
+        events = new ArrayList<>();
+        events.add(new Event("Test", "Date", "Location", "Type", "details"  ));
+        initRecyclerView();
+    }
+
     private void getEvents() {
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -96,7 +102,7 @@ public class ListViewActivity extends Activity {
                 return true;
 
             case R.id.Profile_Menu :
-                Intent ProfileMenuInt = new Intent(ListViewActivity.this,EditProfileActivity .class);
+                Intent ProfileMenuInt = new Intent(ListViewActivity.this,ProfilePageActivity .class);
                 startActivity(ProfileMenuInt );
                 return true;
 
