@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -40,6 +43,46 @@ public class ProfilePageActivity extends Activity implements View.OnClickListene
 
         mAuth = FirebaseAuth.getInstance();
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu (Menu menu) {
+        MenuInflater optionsMenuInflater = getMenuInflater();
+        optionsMenuInflater.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.ListView_Menu:
+                Intent ListViewMenuInt = new Intent(ProfilePageActivity .this, ListViewActivity.class);
+                startActivity(ListViewMenuInt);
+                return true;
+
+            case R.id.MyPlans_Menu:
+                Intent MyPlansMenuInt = new Intent(ProfilePageActivity .this, UpcomingPlanListActivity.class);
+                startActivity(MyPlansMenuInt);
+                return true;
+
+            case R.id.InputPlans_Menu:
+                Intent InputPlanInt = new Intent(ProfilePageActivity .this, PlanInputActivity.class);
+                startActivity(InputPlanInt);
+                return true;
+
+            case R.id.LogOut_Menu:
+                Intent LogOutMenuInt = new Intent(ProfilePageActivity .this, LoginActivity.class);
+                startActivity(LogOutMenuInt);
+                return true;
+
+            case R.id.Profile_Menu:
+                Intent ProfilePageInt = new Intent(ProfilePageActivity .this, EditProfileActivity .class);
+                startActivity(ProfilePageInt );
+                return true;
+
+            default:
+                return false;
+        }
     }
 
     @Override
