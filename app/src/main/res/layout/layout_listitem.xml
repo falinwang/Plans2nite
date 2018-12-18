@@ -36,8 +36,8 @@
 
     <TextView
         android:id="@+id/textViewDetails"
-        android:layout_width="250dp"
-        android:layout_height="150dp"
+        android:layout_width="324dp"
+        android:layout_height="122dp"
         android:layout_alignStart="@+id/textViewLocation"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
