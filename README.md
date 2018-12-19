@@ -28,7 +28,6 @@ A mobile application that will provide a list suggesting restaurants, activities
 5. **My Upcoming Plans**: User can see a list of all plans that they have registered for.
 
 <img width="324" height="576" src="https://github.com/falinwang/Plans2nite/blob/master/Plans2niteDemoFiles/MyPlans.png"/>
-<img width="324" height="576" src="https://github.com/falinwang/Plans2nite/blob/master/Plans2niteDemoFiles/MyPastPlan.png"/>
 
 6. **My Profile**: User can enter name and other contact information. There the user can edit and save as well.
 
