@@ -18,6 +18,7 @@
         android:layout_marginTop="87dp"
         android:text="Name"
         android:textSize="18sp"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="81dp" />
 
@@ -26,11 +27,13 @@
         android:layout_width="153dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textViewName"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="149dp"
-        android:layout_marginLeft="149dp"
-        android:layout_marginBottom="0dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewGender"
@@ -39,11 +42,12 @@
         android:layout_alignStart="@+id/textViewName"
         android:layout_alignLeft="@+id/textViewName"
         android:layout_alignTop="@+id/textViewName1"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="42dp"
         android:layout_marginTop="48dp"
         android:text="Gender"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewGender1"
@@ -54,18 +58,19 @@
         android:layout_alignParentRight="true"
         android:layout_marginEnd="82dp"
         android:layout_marginRight="82dp"
-        android:layout_marginBottom="0dp" />
+        android:layout_marginBottom="0dp"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textViewAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textViewName"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="201dp"
-        android:layout_marginEnd="-8dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="188dp"
         android:text="Address"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewAddress1"
@@ -76,18 +81,19 @@
         android:layout_alignParentRight="true"
         android:layout_marginEnd="82dp"
         android:layout_marginRight="82dp"
-        android:layout_marginBottom="0dp" />
+        android:layout_marginBottom="0dp"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textViewContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textViewGender"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-2dp"
-        android:layout_marginBottom="233dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="262dp"
         android:text="Contact"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewContact1"
@@ -98,7 +104,8 @@
         android:layout_alignParentRight="true"
         android:layout_marginEnd="82dp"
         android:layout_marginRight="82dp"
-        android:layout_marginBottom="0dp" />
+        android:layout_marginBottom="0dp"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/buttonEditProfile"
@@ -125,11 +132,12 @@
         android:id="@+id/textViewEmail"
         android:layout_width="66dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textViewGender"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="176dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="318dp"
         android:text="Email"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewEmail1"
@@ -137,6 +145,11 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textViewName1"
         android:layout_alignBottom="@+id/textViewEmail"
-        android:layout_marginBottom="0dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="18sp" />
 
 </RelativeLayout >

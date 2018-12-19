@@ -10,42 +10,12 @@
         android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextName1"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="165dp"
         android:text="Name" />
-
-    <TextView
-        android:id="@+id/textViewLocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="213dp"
-        android:text="Location" />
-
-    <TextView
-        android:id="@+id/textViewGender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="241dp"
-        android:text="Gender" />
-
-    <TextView
-        android:id="@+id/textViewContact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editTextContact1"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="26dp"
-        android:text="Contact" />
 
     <EditText
         android:id="@+id/editTextName1"
@@ -53,65 +23,90 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="155dp"
+        android:layout_marginTop="150dp"
         android:ems="10"
         android:hint="Full Name"
         android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextLocation1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:text="Location" />
 
     <EditText
         android:id="@+id/editTextLocation1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editTextName1"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="201dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
         android:ems="10"
         android:hint="Location"
         android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextGender1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:text="Gender" />
 
     <EditText
         android:id="@+id/editTextGender1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editTextName1"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="231dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
         android:ems="10"
         android:hint="Female / Male"
         android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextContact1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:text="Contact" />
+
 
     <EditText
         android:id="@+id/editTextContact1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editTextName1"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="182dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
         android:ems="10"
         android:hint="xxx-xxx-xxxx"
         android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/buttonSave"
-        android:layout_width="wrap_content"
+        android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-19dp"
-        android:layout_marginBottom="60dp"
-        android:layout_toEndOf="@+id/textViewContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
         android:text="Save" />
 
     <Button
         android:id="@+id/buttonViewProfile"
-        android:layout_width="wrap_content"
+        android:layout_width="215dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/buttonSave"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="112dp"
-        android:layout_marginRight="112dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
         android:text="View Profile" />
 
     <TextView
@@ -121,7 +116,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="41dp"
-        android:text="Edit Profile" />
+        android:text="Edit Profile"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
 
