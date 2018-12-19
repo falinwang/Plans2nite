@@ -84,7 +84,7 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
                 return true;
 
             case R.id.LogOut_Menu:
-                Intent LogOutMenuInt = new Intent(PlanInputActivity.this,LoginActivity.class);
+                Intent LogOutMenuInt = new Intent(PlanInputActivity.this,MainActivity.class);
                 startActivity(LogOutMenuInt);
                 return true;
 

@@ -89,7 +89,7 @@ public class ListViewActivity extends Activity {
                 return true;
 
             case R.id.LogOut_Menu:
-                Intent LogOutMenuInt = new Intent(ListViewActivity.this,LoginActivity.class);
+                Intent LogOutMenuInt = new Intent(ListViewActivity.this,MainActivity.class);
                 startActivity(LogOutMenuInt);
                 return true;
 

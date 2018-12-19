@@ -40,8 +40,13 @@ public class PastPlanPageActivity extends Activity {
                 startActivity(InputPlansMenuInt);
                 return true;
 
+            case R.id.Profile_Menu :
+                Intent ProfileMenuInt = new Intent(PastPlanPageActivity.this,ProfilePageActivity.class);
+                startActivity(ProfileMenuInt );
+                return true;
+
             case R.id.LogOut_Menu:
-                Intent LogOutMenuInt = new Intent(PastPlanPageActivity.this,LoginActivity.class);
+                Intent LogOutMenuInt = new Intent(PastPlanPageActivity.this,MainActivity.class);
                 startActivity(LogOutMenuInt);
                 return true;
 

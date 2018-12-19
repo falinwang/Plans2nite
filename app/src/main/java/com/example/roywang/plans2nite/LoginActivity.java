@@ -54,7 +54,7 @@ public class LoginActivity extends Activity implements View.OnClickListener{
 
                             } else {
                                 // If sign in fails, display a message to the user.
-                                Toast.makeText(LoginActivity.this, "Access Denied, Try Again!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "Email or Password is wrong. Please try again.", Toast.LENGTH_SHORT).show();
                             }
 
                             // ...
@@ -75,7 +75,7 @@ public class LoginActivity extends Activity implements View.OnClickListener{
                                 startActivity(intentHome);
                             } else {
                                 // If sign in fails, display a message to the user.
-                                Toast.makeText(LoginActivity.this, "Access Denied", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "Email or Password is wrong. Please try again.", Toast.LENGTH_SHORT).show();
                             }
 
                             // ...

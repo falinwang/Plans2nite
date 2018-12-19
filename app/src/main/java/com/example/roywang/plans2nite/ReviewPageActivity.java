@@ -41,7 +41,7 @@ public class ReviewPageActivity extends Activity {
                 return true;
 
             case R.id.LogOut_Menu:
-                Intent LogOutMenuInt = new Intent(ReviewPageActivity.this,LoginActivity.class);
+                Intent LogOutMenuInt = new Intent(ReviewPageActivity.this,MainActivity.class);
                 startActivity(LogOutMenuInt);
                 return true;
 

@@ -107,13 +107,11 @@ public class ProfilePageActivity extends Activity implements View.OnClickListene
                 return true;
 
             case R.id.LogOut_Menu:
-                Intent LogOutMenuInt = new Intent(ProfilePageActivity .this, LoginActivity.class);
+                Intent LogOutMenuInt = new Intent(ProfilePageActivity .this, MainActivity.class);
                 startActivity(LogOutMenuInt);
                 return true;
 
             case R.id.Profile_Menu:
-                Intent ProfilePageInt = new Intent(ProfilePageActivity .this, EditProfileActivity .class);
-                startActivity(ProfilePageInt );
                 return true;
 
             default:

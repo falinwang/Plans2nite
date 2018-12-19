@@ -6,13 +6,23 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
-public class UpcomingPlanListActivity extends Activity {
+public class UpcomingPlanListActivity extends Activity implements View.OnClickListener {
+
+    Button buttonSwitchUpcoming, buttonSwitchPast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upcoming_plan_list);
+        buttonSwitchPast = findViewById(R.id.buttonSwitchPast);
+        buttonSwitchUpcoming = findViewById(R.id.buttonSwitchUpcoming);
+
+        buttonSwitchPast.setOnClickListener(this);
+        buttonSwitchUpcoming.setOnClickListener(this);
+
     }
 
     @Override
@@ -44,12 +54,23 @@ public class UpcomingPlanListActivity extends Activity {
                 return true;
 
             case R.id.LogOut_Menu:
-                Intent LogOutMenuInt = new Intent(UpcomingPlanListActivity.this,LoginActivity.class);
+                Intent LogOutMenuInt = new Intent(UpcomingPlanListActivity.this,MainActivity.class);
                 startActivity(LogOutMenuInt);
                 return true;
 
             default:
                 return false;
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v == buttonSwitchPast){
+            Intent SwitchPastEvent = new Intent(UpcomingPlanListActivity.this, PastPlanListActivity.class);
+            startActivity(SwitchPastEvent);
+
+        } else if (v == buttonSwitchUpcoming) {
+
         }
     }
 }

@@ -6,13 +6,25 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
-public class PastPlanListActivity extends Activity {
+public class PastPlanListActivity extends Activity implements View.OnClickListener {
+
+    Button buttonSwitchUpcoming, buttonSwitchPast;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_past_plan_list);
+
+        buttonSwitchPast = findViewById(R.id.buttonSwitchPast);
+        buttonSwitchUpcoming = findViewById(R.id.buttonSwitchUpcoming);
+
+        buttonSwitchPast.setOnClickListener(this);
+        buttonSwitchUpcoming.setOnClickListener(this);
+
     }
 
     @Override
@@ -31,7 +43,7 @@ public class PastPlanListActivity extends Activity {
                 return true;
 
             case R.id.MyPlans_Menu:
-                Intent MyPlansMenuInt = new Intent(PastPlanListActivity.this,UpcomingPlanListActivity.class);
+                Intent MyPlansMenuInt = new Intent(PastPlanListActivity.this,PastPlanListActivity.class);
                 startActivity(MyPlansMenuInt);
                 return true;
 
@@ -40,13 +52,29 @@ public class PastPlanListActivity extends Activity {
                 startActivity(InputPlansMenuInt);
                 return true;
 
+            case R.id.Profile_Menu :
+                Intent ProfileMenuInt = new Intent(PastPlanListActivity.this,ProfilePageActivity.class);
+                startActivity(ProfileMenuInt );
+                return true;
+
             case R.id.LogOut_Menu:
-                Intent LogOutMenuInt = new Intent(PastPlanListActivity.this,LoginActivity.class);
+                Intent LogOutMenuInt = new Intent(PastPlanListActivity.this,MainActivity.class);
                 startActivity(LogOutMenuInt);
                 return true;
 
             default:
                 return false;
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v == buttonSwitchPast){
+
+
+        } else if (v == buttonSwitchUpcoming) {
+            Intent SwitchUpcomingEvent = new Intent(PastPlanListActivity.this, UpcomingPlanListActivity.class);
+            startActivity(SwitchUpcomingEvent);
         }
     }
 }

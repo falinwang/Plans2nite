@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -71,13 +72,14 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
                 return true;
 
             case R.id.LogOut_Menu:
-                Intent LogOutMenuInt = new Intent(EditProfileActivity .this,LoginActivity.class);
+                Intent LogOutMenuInt = new Intent(EditProfileActivity .this,MainActivity.class);
                 startActivity(LogOutMenuInt);
                 return true;
 
             case R.id.Profile_Menu :
+                Intent ProfileMenuInt = new Intent(EditProfileActivity.this,ProfilePageActivity .class);
+                startActivity(ProfileMenuInt );
                 return true;
-
             default:
                 return false;
         }
@@ -89,8 +91,7 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Users");
 
-        if(v==buttonSave )
-
+        if(v == buttonSave)
         {
             String createName=editTextName1.getText().toString();
             String createEmail=mAuth.getCurrentUser().getEmail() ;
@@ -98,17 +99,19 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
             String createContact=editTextContact1.getText().toString();
             String createGender=editTextGender1.getText().toString();
 
-            User newUser=new User(createName,createLocation,createEmail ,createContact,createGender  );
+            User newUser=new User(createName,createLocation,createEmail ,createContact,createGender);
 
             myRef.push().setValue(newUser);
+            Toast.makeText(EditProfileActivity.this, "Save Successfully", Toast.LENGTH_SHORT).show();
 
-            }
 
-            if(v==buttonViewProfile)
-            {
-Intent ProfileIntent=new Intent(EditProfileActivity.this,ProfilePageActivity.class);
-startActivity(ProfileIntent );
-            }
+        }
+
+        if(v == buttonViewProfile)
+        {
+            Intent ProfileIntent=new Intent(EditProfileActivity.this,ProfilePageActivity.class);
+            startActivity(ProfileIntent);
+        }
 
     }
 }

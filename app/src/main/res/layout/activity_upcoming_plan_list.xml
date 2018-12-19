@@ -29,7 +29,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="56dp"
-        android:text="Upcoming Plans" />
+        android:text="Your Upcoming Plans" />
 
     <LinearLayout
         android:layout_width="match_parent"
