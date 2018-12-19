@@ -18,8 +18,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private ArrayList<Event> events;
     private Context mContext;
 
-
-
     RecyclerViewAdapter(ArrayList<Event> events, Context mContext) {
         this.events = events;
         this.mContext = mContext;
@@ -30,7 +28,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.layout_listitem, viewGroup, false);
         ViewHolder viewHolder = new ViewHolder(view);
-
         return viewHolder;
     }
 
@@ -67,6 +64,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         TextView textViewLocation;
         TextView textViewPlantype;
         TextView textViewDetails;
+        Button buttonRegisterListView;
 
         RelativeLayout parentLayout;
 
@@ -79,6 +77,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             textViewPlantype = itemView.findViewById(R.id.textViewPlantype);
             textViewDetails = itemView.findViewById(R.id.textViewDetails);
             parentLayout = itemView.findViewById(R.id.parent_Layout);
+            buttonRegisterListView = itemView.findViewById(R.id.buttonRegisterListView);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(v.getContext(), "click"+getAdapterPosition(),Toast.LENGTH_SHORT).show();                }
+            });
+
+            buttonRegisterListView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(v.getContext(),"You have successfully registered for the event",Toast.LENGTH_SHORT ).show() ;
+                }
+            });
 
         }
     }
