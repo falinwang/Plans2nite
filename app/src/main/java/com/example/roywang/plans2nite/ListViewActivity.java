@@ -8,6 +8,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -17,10 +20,12 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class ListViewActivity extends Activity {
+public class ListViewActivity extends Activity implements View.OnClickListener {
 
     private ArrayList<Event> events;
     private RecyclerViewAdapter recyclerViewAdapter;
+
+    Button buttonRegisterListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +34,9 @@ public class ListViewActivity extends Activity {
         events = new ArrayList<>();
         initRecyclerView();
         getEvents();
+
+        buttonRegisterListView=findViewById(R.id.buttonRegisterListView ) ;
+        buttonRegisterListView.setOnClickListener(this);
     }
 
 
@@ -100,6 +108,16 @@ public class ListViewActivity extends Activity {
 
             default:
                 return false;
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v==buttonRegisterListView )
+
+        {
+            Toast.makeText(this,"You have successfully registered for the event",Toast.LENGTH_SHORT ).show() ;
+
         }
     }
 }
