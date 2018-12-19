@@ -43,6 +43,42 @@ public class ProfilePageActivity extends Activity implements View.OnClickListene
 
         mAuth = FirebaseAuth.getInstance();
 
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final DatabaseReference myRef = database.getReference("Users");
+        String usercurrent=mAuth.getCurrentUser().getEmail();
+        myRef.orderByChild("email").equalTo(usercurrent).addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                User findUser=dataSnapshot.getValue(User.class);
+                String useremail=mAuth.getCurrentUser().getEmail();
+                textViewAddress1.setText(findUser.location );
+                textViewContact1.setText(findUser.contact );
+                textViewEmail1.setText(useremail );
+                textViewGender1.setText(findUser.gender );
+                textViewName1.setText(findUser.name );
+
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
     }
 
     @Override
@@ -85,45 +121,12 @@ public class ProfilePageActivity extends Activity implements View.OnClickListene
         }
     }
 
+
+
     @Override
     public void onClick(View v) {
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference myRef = database.getReference("Users");
-        String usercurrent=mAuth.getCurrentUser().getEmail();
-        myRef.orderByChild("email").equalTo(usercurrent).addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                User findUser=dataSnapshot.getValue(User.class);
-                String useremail=mAuth.getCurrentUser().getEmail();
-                textViewAddress1.setText(findUser.location );
-                textViewContact1.setText(findUser.contact );
-                textViewEmail1.setText(useremail );
-                textViewGender1.setText(findUser.gender );
-                textViewName1.setText(findUser.name );
 
-            }
-
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
 
         if(v==buttonEditProfile )
         {
