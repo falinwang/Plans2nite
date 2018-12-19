@@ -37,7 +37,6 @@ public class LoginActivity extends Activity implements View.OnClickListener{
         mAuth = FirebaseAuth.getInstance();
 
     }
-    // TODO: Not sure about what's next page
 
     @Override
     public void onClick(View v) {

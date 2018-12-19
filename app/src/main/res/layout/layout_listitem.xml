@@ -18,7 +18,9 @@
             android:layout_weight="1"
             android:ems="10"
             android:text="Name"
-            android:textSize="17dp" />
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewDate"

@@ -55,8 +55,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="155dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Full Name"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editTextLocation1"
@@ -66,8 +66,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="201dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Location" />
+        android:hint="Location"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editTextGender1"
@@ -78,8 +78,8 @@
         android:layout_marginStart="0dp"
         android:layout_marginBottom="231dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Gender" />
+        android:hint="Female / Male"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editTextContact1"
@@ -90,8 +90,8 @@
         android:layout_marginStart="0dp"
         android:layout_marginBottom="182dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Mobile Number" />
+        android:hint="xxx-xxx-xxxx"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/buttonSave"

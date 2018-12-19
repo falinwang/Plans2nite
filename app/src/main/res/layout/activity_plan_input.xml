@@ -31,8 +31,8 @@
         android:layout_marginEnd="90dp"
         android:layout_marginRight="90dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter name of event" />
+        android:hint="Enter name of event"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editEventDate"
@@ -43,8 +43,8 @@
         android:layout_marginStart="2dp"
         android:layout_marginTop="124dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter date of event" />
+        android:hint="Enter date of event"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editEventLocation"
@@ -55,8 +55,8 @@
         android:layout_marginTop="175dp"
         android:layout_marginEnd="-2dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter your event location" />
+        android:hint="Enter your event location"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editEventType"
@@ -67,8 +67,8 @@
         android:layout_marginStart="0dp"
         android:layout_marginBottom="246dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter the event type" />
+        android:hint="Enter the event type"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editEventDetails"
@@ -79,7 +79,7 @@
         android:layout_marginStart="2dp"
         android:layout_marginBottom="80dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter event details" />
+        android:hint="Enter event details"
+        android:inputType="textPersonName" />
 
 </RelativeLayout>
