@@ -9,19 +9,37 @@ A mobile application that will provide a list suggesting restaurants, activities
     - If the user selects *Go To Login* button, the user will be taken to the Login page. 
     - If the user selects *Create New Event*, the user will be taken to a page to insert an event.
 
+<img width="324" height="576" src="https://github.com/falinwang/Plans2nite/blob/master/Plans2niteDemoFiles/ClickMainActivity.gif"/>
+
 2. **Login Screen**: User can either enter their login credentials or register as a new user using email and password. 
     - Sample Username: b@b.com 
     - Sample Password: bbbbbb
+    
+<img width="324" height="576" src="https://github.com/falinwang/Plans2nite/blob/master/Plans2niteDemoFiles/LoginwithEmail.gif"/>
 
 3. **Event List View Screen**: Plans are listed for the user. The user can then *register* for the event and it will we be saved to the upcoming plan page.
 
+<img width="324" height="576" src="https://github.com/falinwang/Plans2nite/blob/master/Plans2niteDemoFiles/Register.gif"/>
+
 4. **Create Event Screen**: User will be able to enter name of event, date, location, event type, and event details. After submitting, the event will be added to the main list of events in the home page for the user to browse.
 
-5. **My Plans**: User can see a list of all plans that they have registered for.
+<img width="324" height="576" src="https://github.com/falinwang/Plans2nite/blob/master/Plans2niteDemoFiles/CreateNewEvent.gif"/>
+
+5. **My Upcoming Plans**: User can see a list of all plans that they have registered for.
+
+<img width="324" height="576" src="https://github.com/falinwang/Plans2nite/blob/master/Plans2niteDemoFiles/MyPlans.png"/>
+<img width="324" height="576" src="https://github.com/falinwang/Plans2nite/blob/master/Plans2niteDemoFiles/MyPastPlan.png"/>
 
 6. **My Profile**: User can enter name and other contact information. There the user can edit and save as well.
 
+<img width="324" height="576" src="https://github.com/falinwang/Plans2nite/blob/master/Plans2niteDemoFiles/MyProfile.png"/>
+<img width="324" height="576" src="https://github.com/falinwang/Plans2nite/blob/master/Plans2niteDemoFiles/EditProfile.gif"/>
+
 7. **Menu**: The menu allows navigation through entire app and ability to log out.
+
+<img width="324" height="576" src="https://github.com/falinwang/Plans2nite/blob/master/Plans2niteDemoFiles/Menu.gif"/>
+
+
 
 ## 2. Future Implementation
 ### Main Home Screen
