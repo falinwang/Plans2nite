@@ -16,8 +16,6 @@ public class Event {
         this.location = location;
         this.plantype = plantype;
         this.details = details;
-
-
     }
 
     public Event() {
