@@ -69,26 +69,17 @@
         android:text="Plantype"
         android:textSize="17dp" />
 
-    <Button
-        android:id="@+id/buttonFavorite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="91dp"
-        android:layout_marginBottom="21dp"
-        android:text="Favorite" />
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/buttonFavorite"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="213dp"
-        android:layout_marginLeft="213dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginLeft="215dp"
         android:layout_marginBottom="1dp"
+        android:layout_alignParentBottom="true"
         android:text="Register" />
 
 </RelativeLayout>
