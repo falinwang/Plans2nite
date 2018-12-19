@@ -56,7 +56,8 @@ public class PlanInputActivity extends Activity implements View.OnClickListener 
 
             myRef.push().setValue(newEvent);
             Toast.makeText(PlanInputActivity.this, "Create Successfully!", Toast.LENGTH_SHORT).show();
-
+            Intent intentBacktoHome = new Intent(PlanInputActivity.this,ListViewActivity.class);
+            startActivity(intentBacktoHome);
         }
     }
 
