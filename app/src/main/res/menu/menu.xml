@@ -3,16 +3,16 @@
 
     <item
         android:id="@+id/ListView_Menu"
-        android:title="Home" />
+        android:title="Home Page" />
     <item
         android:id="@+id/MyPlans_Menu"
         android:title="My Plans" />
     <item
         android:id="@+id/InputPlans_Menu"
-        android:title="Enter Plans" />
+        android:title="Create New Event" />
     <item
         android:id="@+id/Profile_Menu"
-        android:title="Profile" />
+        android:title="My Profile" />
     <item
         android:id="@+id/LogOut_Menu"
         android:title="Log Out" />
