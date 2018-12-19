@@ -20,12 +20,11 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class ListViewActivity extends Activity implements View.OnClickListener {
+public class ListViewActivity extends Activity {
 
     private ArrayList<Event> events;
     private RecyclerViewAdapter recyclerViewAdapter;
 
-    Button buttonRegisterListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +34,7 @@ public class ListViewActivity extends Activity implements View.OnClickListener {
         initRecyclerView();
         getEvents();
 
-        buttonRegisterListView=findViewById(R.id.buttonRegisterListView ) ;
-        buttonRegisterListView.setOnClickListener(this);
+
     }
 
 
@@ -111,13 +109,5 @@ public class ListViewActivity extends Activity implements View.OnClickListener {
         }
     }
 
-    @Override
-    public void onClick(View v) {
-        if(v==buttonRegisterListView )
 
-        {
-            Toast.makeText(this,"You have successfully registered for the event",Toast.LENGTH_SHORT ).show() ;
-
-        }
-    }
 }
