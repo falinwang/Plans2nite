@@ -104,7 +104,8 @@ public class EditProfileActivity extends Activity implements View.OnClickListene
             myRef.push().setValue(newUser);
             Toast.makeText(EditProfileActivity.this, "Save Successfully", Toast.LENGTH_SHORT).show();
 
-
+            Intent intentViewProfile = new Intent(EditProfileActivity.this, ProfilePageActivity.class);
+            startActivity(intentViewProfile);
         }
 
         if(v == buttonViewProfile)
