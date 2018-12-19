@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="350dp"
+    android:layout_height="230dp"
     android:id="@+id/parent_Layout" android:padding="30dp">
 
     <LinearLayout
@@ -37,7 +37,7 @@
     <TextView
         android:id="@+id/textViewDetails"
         android:layout_width="324dp"
-        android:layout_height="122dp"
+        android:layout_height="40dp"
         android:layout_alignStart="@+id/textViewLocation"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"

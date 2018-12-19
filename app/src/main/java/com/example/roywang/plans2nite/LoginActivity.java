@@ -48,7 +48,11 @@ public class LoginActivity extends Activity implements View.OnClickListener{
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 // Sign in success, update UI with the signed-in user's information
-                                Toast.makeText(LoginActivity.this, "Welcome, New User! Now click LOGIN to login your account.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "Welcome, New User!", Toast.LENGTH_SHORT).show();
+
+                                Intent intentMain = new Intent(LoginActivity.this, ListViewActivity.class);
+                                startActivity(intentMain);
+
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Toast.makeText(LoginActivity.this, "Access Denied, Try Again!", Toast.LENGTH_SHORT).show();
